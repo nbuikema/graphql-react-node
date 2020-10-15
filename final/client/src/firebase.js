@@ -1,17 +1,19 @@
-import * as firebase from 'firebase';
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: 'AIzaSyA5EkxSPBgCm_K3hhHnZF1GyAFIXaSmYH4',
-  authDomain: 'gqlreactnode99.firebaseapp.com',
-  // databaseURL: 'https://gqlreactnode99.firebaseio.com',
-  projectId: 'gqlreactnode99',
-  storageBucket: 'gqlreactnode99.appspot.com',
-  // messagingSenderId: '985266742688',
-  appId: '1:985266742688:web:f6f59bf21efd2add3c70c5',
-  measurementId: 'G-MTHN9B9VT9'
+import firebase from 'firebase';
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyBHZ8gcsHr6Xn6n54m715hawQkizfiEPTc',
+  authDomain: 'mern-graphql.firebaseapp.com',
+  // databaseURL: "https://mern-graphql.firebaseio.com",
+  projectId: 'mern-graphql',
+  storageBucket: 'mern-graphql.appspot.com',
+  // messagingSenderId: "858391887425",
+  appId: '1:858391887425:web:70c5502db6d247b5fbd0c0',
+  measurementId: 'G-X7BZKQMH9R'
 };
-// Initialize Firebase
+
+// initialize firebase
 firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 
 export const auth = firebase.auth();
 export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
